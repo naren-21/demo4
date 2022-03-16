@@ -1,5 +1,5 @@
 pipeline{
-    Agent { label 'mbpipe' }
+    Agent {label 'mbpipe'}
     stages {
     stage ('subtraction')
     steps {
@@ -7,4 +7,4 @@ pipeline{
     }
     }
     }
-    }
+    
