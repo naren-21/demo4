@@ -1,9 +1,9 @@
 pipeline{
     Agent { label 'mbpipe' }
     stages {
-    stage ('addition')
+    stage ('subtraction')
     steps {
-    sh "/home/narendra/workspace/add.sh"
+    sh "/home/narendra/workspace/sub.sh"
     }
     }
     }
