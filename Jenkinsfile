@@ -1,5 +1,5 @@
 pipeline{
-    Agent {label 'multipipeline'}
+    agent any
     stages {
     stage ('subtraction')
         {
