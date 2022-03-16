@@ -1,5 +1,5 @@
 pipeline{
-    Agent { label 'multipipeline' }
+    Agent {label 'multipipeline'}
     stages {
     stage ('addition')
         {
