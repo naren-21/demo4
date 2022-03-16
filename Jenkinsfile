@@ -1,5 +1,5 @@
 pipeline{
-    Agent { label 'mbpipe' }
+    Agent { label 'multipipeline' }
     stages {
     stage ('addition')
         {
