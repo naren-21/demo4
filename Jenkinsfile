@@ -4,7 +4,7 @@ pipeline{
     stage ('addition')
         {
     steps {
-    sh " add.sh "
+    sh "add.sh"
     }
     }
     }
