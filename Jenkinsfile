@@ -4,7 +4,7 @@ pipeline{
     stage ('addition')
         {
     steps {
-    sh "./var/lib/jenkins/workspace/add.sh"
+    sh "./var/lib/jenkins/workspace/ppjob1/add.sh"
              }
           }
        }
