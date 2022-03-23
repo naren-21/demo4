@@ -4,7 +4,7 @@ pipeline{
     stage ('addition')
         {
     steps {
-    sh "./var/lib/jenkins/workspace/ppjob1/add.sh"
+          echo "hi this demo purpose only"
              }
           }
         stage ('email notification')
