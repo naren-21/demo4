@@ -1,16 +1,17 @@
 pipeline{
     agent any
     stages {
-    stage ('addition')
-        {
-    steps {
-          echo "hi this demo purpose only"
-             }
-          }
-        stage ('email notification')
-        {
-            steps { emailext body: 'this is notification', subject: 'jenkins job', to: 'dnkumar@stratapps.com,vabhinav@stratapps.com'
-                  }
+       stage ('checkout'){
+          steps {
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/naren-21/demo4.git']]])
+                }
+        }
+       stage ('addition'){
+          steps { 
+                git branch: 'main', credentialsId: 'test123', url: 'https://github.com/naren-21/demo4.git'
+                sh 'python3 task4.py'
+                
+                }
             }
         }
     }
