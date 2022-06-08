@@ -16,7 +16,7 @@ pipeline{
         stage ('addition'){
           steps { 
                 git branch: 'main', credentialsId: 'test123', url: 'https://github.com/naren-21/demo4.git'
-                bat './ add.sh'
+                sh 'python3 greatsmall.py'
                  }
             }
         }
