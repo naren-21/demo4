@@ -19,5 +19,10 @@ pipeline{
                 sh 'python3 greatsmall.py'
                  }
             }
+        stage ('email'){
+            steps {
+                 mail bcc: '', body: 'descriptive pipeline program executed...', cc: 'mmahesh@stratapps.com,vabhinav@stratapps.com', from: '', replyTo: '', subject: 'build success', to: 'duvvarapu.naren@gmail.com,gowthamram01@gmail.com'
+                 }
+            }
         }
-    }
+   }
