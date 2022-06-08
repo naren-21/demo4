@@ -5,4 +5,4 @@ def great(x,y,z):
         return y
     else:
         return z
-print("largest among 3 no.s is",great(10,50,80))
+print("largest among 3 no.s is",great(100,50,80))
